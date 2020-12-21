@@ -8,11 +8,19 @@ namespace TechnomediaLabs.Internal
 	[InitializeOnLoad]
 	public class AutoSaveFeature
 	{
+<<<<<<< Updated upstream
 		private const string MenuItemName = "Zetcil/Tools/AutoSave on Play";
 
         static AutoSaveFeature()
         {
             EditorApplication.playModeStateChanged += AutoSaveWhenPlaymodeStarts;
+=======
+		private const string MenuItemName = "Zetcil/Tools/AutoSave on Play";
+
+        static AutoSaveFeature()
+        {
+            EditorApplication.playModeStateChanged += AutoSaveWhenPlaymodeStarts;
+>>>>>>> Stashed changes
         }
 
         private static bool IsEnabled
@@ -26,7 +34,11 @@ namespace TechnomediaLabs.Internal
 			IsEnabled = !IsEnabled;
 		}
 
+<<<<<<< Updated upstream
         [MenuItem(MenuItemName, false, 5000)]
+=======
+        [MenuItem(MenuItemName, false, 5000)]
+>>>>>>> Stashed changes
         private static bool MenuItemValidation()
 		{
 			Menu.SetChecked(MenuItemName, IsEnabled);

@@ -88,9 +88,15 @@ namespace TechnomediaLabs.Internal
 				settingsInstance = (TechnomediaLabsSettings) UnityEditorInternal.InternalEditorUtility.LoadSerializedFileAndForget(Path)[0];
 			}
 			catch (Exception ex)
+<<<<<<< Updated upstream
 			{
                 //Debug.LogError("Unable to read TechnomediaLabsSettings, set to defaults" + ex);
                 if (ex == null) {
+=======
+			{
+                //Debug.LogError("Unable to read TechnomediaLabsSettings, set to defaults" + ex);
+                if (ex == null) {
+>>>>>>> Stashed changes
                 }
 				settingsInstance = null;
 			}

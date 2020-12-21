@@ -17,6 +17,7 @@ namespace TechnomediaLabs.Internal
 		{
 			get { return TechnomediaLabsSettings.CleanEmptyDirectoriesFeature; }
 			set { TechnomediaLabsSettings.CleanEmptyDirectoriesFeature = value; }
+<<<<<<< Updated upstream
 		}
 
         private static void MenuItem()
@@ -25,6 +26,16 @@ namespace TechnomediaLabs.Internal
         }
 
         [MenuItem(MenuItemName, false, 5000)]
+=======
+		}
+
+        private static void MenuItem()
+		{
+			IsEnabled = !IsEnabled;
+        }
+
+        [MenuItem(MenuItemName, false, 5000)]
+>>>>>>> Stashed changes
         private static bool MenuItemValidation()
 		{
 			Menu.SetChecked(MenuItemName, IsEnabled);
